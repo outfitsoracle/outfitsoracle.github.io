@@ -4,24 +4,46 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="title" content="Outfits Oracle – Where Fashion Trends Meet Daily Inspiration" />
+  <meta name="description" content="A bold fashion gallery by Outfits Oracle. Discover daily outfit inspo, trends & confidence." />
+  <meta property="og:title" content="Outfits Oracle" />
+  <meta property="og:description" content="Fashion that speaks — straight from the street to your screen." />
+  <meta property="og:image" content="logo.png" />
+  <meta property="og:type" content="website" />
   <title>Outfits Oracle</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
   <style>
     body {
       margin: 0;
-      font-family: Arial, sans-serif;
+      font-family: 'Montserrat', sans-serif;
       background-color: #d62828;
       color: #fff;
-      text-align: center;
+      scroll-behavior: smooth;
+    }
+    nav {
+      position: sticky;
+      top: 0;
+      background: #000;
+      padding: 10px 0;
+      z-index: 999;
+    }
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
     }
     header {
+      text-align: center;
       padding: 30px 10px;
     }
     header img {
-      max-width: 300px;
+      max-width: 280px;
       height: auto;
     }
     section {
       padding: 30px 20px;
+      text-align: center;
     }
     h1 {
       font-size: 2.3em;
@@ -55,20 +77,33 @@
       height: auto;
       border-radius: 10px;
       object-fit: cover;
+      transition: transform 0.3s ease;
+    }
+    .gallery img:hover {
+      transform: scale(1.05);
     }
     footer {
       margin-top: 60px;
       padding: 20px;
       font-size: 0.9em;
       background-color: #000;
+      color: #fff;
+      text-align: center;
     }
   </style>
 </head>
 <body>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#gallery">Gallery</a>
+    <a href="https://www.instagram.com/outfitsoracle/" target="_blank">Instagram</a>
+  </nav>
+
   <header>
     <img src="logo.png" alt="Outfits Oracle Logo" />
   </header>
-  <section>
+
+  <section id="about">
     <h1>Outfits Oracle – Where Fashion Trends Meet Daily Inspiration</h1>
     <p>
       <strong>Outfits Oracle</strong> is your daily dose of fashion inspiration.  
@@ -85,7 +120,7 @@
     </a>
   </section>
 
-  <section>
+  <section id="gallery">
     <h1>Style Gallery</h1>
     <div class="gallery">
       <img src="894a75f637b34493335c55d9f0155403.jpg" alt="Fashion Image"/>
@@ -101,6 +136,7 @@
 
     </div>
   </section>
+
   <footer>
     &copy; 2025 Outfits Oracle. All rights reserved.
   </footer>
