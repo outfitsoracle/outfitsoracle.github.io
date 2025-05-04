@@ -4,84 +4,60 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Outfits Oracle</title>
+    <title>Outfits Oracle - Style Gallery</title>
     <style>
         body {
-            margin: 0;
-            font-family: 'Arial', sans-serif;
+            font-family: Arial, sans-serif;
             background-color: #d62828;
+            margin: 0;
+            padding: 0;
             color: #fff;
-            text-align: center;
         }
         header {
-            padding: 30px 10px;
-        }
-        header img {
-            max-width: 300px;
-            height: auto;
-        }
-        section {
-            padding: 40px 20px;
+            text-align: center;
+            padding: 30px;
         }
         h1 {
-            font-size: 2.5em;
-            margin-bottom: 0.3em;
+            font-size: 2.2em;
         }
-        p {
-            font-size: 1.1em;
-            max-width: 800px;
-            margin: 0 auto 1em auto;
-            line-height: 1.6;
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 15px;
+            padding: 20px;
         }
-        ul {
-            list-style: none;
-            padding: 0;
-            font-size: 1.1em;
-            max-width: 800px;
-            margin: 20px auto;
-        }
-        ul li::before {
-            content: "• ";
-            color: #ffbe0b;
-        }
-        .instagram-btn {
-            display: inline-block;
-            background-color: #ffbe0b;
-            color: #000;
-            padding: 12px 25px;
-            font-weight: bold;
-            border-radius: 25px;
-            text-decoration: none;
-            margin-top: 30px;
+        .gallery img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            object-fit: cover;
         }
         footer {
-            margin-top: 60px;
+            text-align: center;
             padding: 20px;
-            font-size: 0.9em;
             background-color: #000;
+            color: #fff;
         }
     </style>
 </head>
 <body>
     <header>
-        <img src="logo.png" alt="Outfits Oracle Logo">
+        <h1>Outfits Oracle Style Gallery</h1>
+        <p>Where Fashion Trends Meet Daily Inspiration</p>
     </header>
-    <section>
-        <h1>Outfits Oracle – Where Fashion Trends Meet Daily Inspiration</h1>
-        <p>
-            At Outfits Oracle, we believe fashion isn’t just about what you wear—it’s about how you express yourself. We're a style-forward Instagram hub dedicated to uncovering the latest trends and helping you translate them into real, wearable outfits. From global runway highlights to the most loved street style moments, we curate content that keeps you inspired and ahead of the fashion game.
-        </p>
-        <p>
-            Whether you’re looking for your next wardrobe essential, bold statement looks, or just some aesthetic outfit vibes, Outfits Oracle is your go-to guide. We decode the ever-changing world of fashion and deliver it in bite-sized, visually curated posts designed for real people with real style.
-        </p>
-        <ul>
-            <li>Trend Spotlights – The hottest pieces and looks dominating the scene</li>
-            <li>Styling Tips – How to wear it, layer it, and make it yours</li>
-            <li>Outfit Inspiration – Daily posts to spark your creativity</li>
-            <li>Seasonal Forecasts – Stay ahead with what's coming next in fashion</li>
-        </ul>
-        <a class="instagram-btn" href="https://www.instagram.com/outfitsoracle/" target="_blank">Follow Us on Instagram</a>
-    </section>
+    <div class="gallery">
+        <img src="894a75f637b34493335c55d9f0155403.jpg" alt="Fashion Image">
+        <img src="be3843959f84d81b3995367946b97efb.jpg" alt="Fashion Image">
+        <img src="dec698cccc02b67f9c49c0552176a5c9.jpg" alt="Fashion Image">
+        <img src="5aebcdbb9205693269d60fee22d20ab8.jpg" alt="Fashion Image">
+        <img src="7ad41c29d38c7036343c311ad3f25428.jpg" alt="Fashion Image">
+        <img src="7c808918091423ae7c72a8fa0bd0d5da.jpg" alt="Fashion Image">
+        <img src="41cf3726498f4f34cc3391b78f340bce.jpg" alt="Fashion Image">
+        <img src="043f08481adae8467d304f8572d21f2a.jpg" alt="Fashion Image">
+        <img src="75ae94c70cac5b577920a1e7214568a8.jpg" alt="Fashion Image">
+        <img src="659e5c95cbcf7cffe6a474bfd930d59d.jpg" alt="Fashion Image">
+
+    </div>
     <footer>
         &copy; 2025 Outfits Oracle. All rights reserved.
     </footer>
